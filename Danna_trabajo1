@@ -1,0 +1,90 @@
+public static void main(String[] args) {
+float num1=0, num2=0, suma=0,resta=0,multi=0,divi=0,op=0;
+String aux= "";
+num1= Float.parseFloat(JOptionPane.showInputDialog("Ingrese el 1er numero: "));
+num2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el 2do numero: "));
+op = Float.parseFloat(JOptionPane.showInputDialog("Selecciona el tipo de operacion que
+deseas realizar: 1.suma 2.resta 3.multiplicacion 4.division"));
+if (num1 >= num2) {
+if (op == 1) {
+suma= num1+num2;
+JOptionPane.showMessageDialog(null, "SUMAR "+ num1 +" + "+ num2 + " = "+
+suma);
+for ( int i = 0; i < 10; i++) {
+aux += suma + " x " +(i+1) + " = " +(suma * (i+1)+ "\n") ;
+JOptionPane.showMessageDialog(null," TABLA DE MULTIPLICAR " + aux + " \n
+");
+//+suma +" x " +(i+1) +" = " +(suma * (i+1 ))+
+}
+}
+if (op == 2) {
+resta= num1-num2;
+JOptionPane.showMessageDialog(null, "RESTAR "+ num1 +" - "+ num2 + " = "+
+resta);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +resta +" x " +(i+1) +" = " +(resta * (i+1)));
+}
+}
+if (op == 3) {
+multi= num1*num2;
+4
+JOptionPane.showMessageDialog(null, " MULTIPLICAR "+ num1 +" * "+ num2 + " =
+"+ multi);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +multi +" x " +(i+1) +" = " +(multi* (i+1)));
+}
+}
+if (op == 4) {
+if ( num2 == 0) {
+JOptionPane.showMessageDialog(null, "Numero ingresado invalido,no es posible
+dividir entre cero");
+}else {
+divi= num1/num2;
+JOptionPane.showMessageDialog(null, "DIVIDIR "+ num1 +" / "+ num2 + " = "+ divi);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +divi+" x " +(i+1) +" = " +(divi * (i+1)));
+}
+}
+}
+// numero 2 es mayor
+}else {
+if (op == 1) {
+suma= num2+num1;
+JOptionPane.showMessageDialog(null, "SUMAR "+ num2+" + "+ num1 + " = "+
+suma);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +suma +" x " +(i+1) +" = " +(suma * (i+1)));
+}
+}
+if (op == 2) {
+resta= num2-num1;
+JOptionPane.showMessageDialog(null, " RESTAR "+ num2 +" - "+ num1 + " = "+
+resta);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +resta +" x " +(i+1) +" = " +(resta * (i+1)));
+}
+}
+if (op == 3) {
+multi= num2*num1;
+JOptionPane.showMessageDialog(null, "MULTIPLICAR "+ num2 +" * "+ num1 + " =
+"+ multi);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +multi +" x " +(i+1) +" = " +(multi * (i+1)));
+}
+}
+if (op == 4) {
+if (num1 == 0) {
+5
+JOptionPane.showMessageDialog(null, "Numero ingresado invalido,no es posible
+dividir entre cero");
+}else{
+divi= num2/num1;
+JOptionPane.showMessageDialog(null, " DIVIDIR "+ num2 +" / "+ num1 + " = "+ divi);
+for ( int i = 0; i < 10; i++) {
+JOptionPane.showMessageDialog(null, +divi +" x " +(i+1) +" = " +(divi * (i+1)));
+}
+}
+}
+}
+}
+}
